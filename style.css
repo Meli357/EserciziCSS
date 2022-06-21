@@ -1,5 +1,6 @@
 html, body {
     height:100%;
+    margin:0;
 }
 
 .sidebar {
@@ -29,4 +30,9 @@ a{
 a:hover{
     color:#2b2bb2;
     transition-duration:0.3s; 
+}
+
+ul li{
+    font-size: 20px;
+    padding: 10px 10px;
 }
