@@ -1,0 +1,77 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+header{ 
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+header h4{
+    width:max-content;
+    grid-column: 2;
+}
+
+header i{
+    align-self: center;
+    text-align: right;
+    grid-column: 3;
+}
+
+header span{
+    grid-column: 1;
+}
+
+.circle{
+    background-color: aliceblue;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.container{  
+    margin:0 auto;
+}
+
+.card-cont{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /*
+    flex-wrap: wrap;
+    */
+}
+
+.card{  
+    width: 280px;
+    margin: 10px 20px;
+    background-color: rgb(211, 211, 211);   
+    border-radius: 5%;
+    padding:10px 20px;
+}
+
+
+header h4::after{
+    content:"Lun, 13/12/2021";
+    color:aliceblue;
+}
+ 
+::after{
+    display:block;
+}
+
+.first{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .card-cont{
+        flex-wrap: wrap;
+    }
+        
+}
